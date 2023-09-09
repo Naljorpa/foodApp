@@ -1,7 +1,9 @@
 import classes from  './MealItemForm.module.css';
 import Input from '../../UI/Input';
+import Modal from '../../UI/Modal';
 
 const MealItemForm = props => {
+
     return <form className={classes.form}>
         <Input label="Amount" input={{
             id: 'amount'+ props.id,
