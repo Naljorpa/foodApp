@@ -1,9 +1,10 @@
+import React, { useContext } from "react";
 import classes from "./Header.module.css";
 import mealsImage from '../../assets/meals.jpg';
 import HeaderCartButton from "./HeaderCartButton";
+import Cart from "../Cart/Cart";
 
 const Header = props => {
-    console.log(props);
     const handleCart = () => {
         props.onShowCart(true)
     }
